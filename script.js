@@ -183,5 +183,22 @@ $(document).ready(function(){
 //$testArea.html("Actual Balance: " + pa.showActualBalance());
  // });
 
-});
+
+  //button for action of Income,Expence,Turnover
+
+     $("#showIn").click(function(){         
+     $("#dynTabIn").fadeToggle();
+      });
+ 
+     $("#showEx").click(function(){
+     $("#dynTabEx").fadeToggle();
+   
+     });
+  
+      $("#showTo").click(function(){
+      $("#dynTabTo").fadeToggle();
+                           });
+
+
+});       //end function ready
 
