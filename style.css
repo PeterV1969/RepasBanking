@@ -44,6 +44,22 @@ border-radius: 5px;
 	font-weight: bold;
 }
 
+.inexButton {
+width: 10%;
+height: 5%;
+background-color: #30A0EA; 
+color: white;
+border: none;
+font-size: 125%;
+border-radius: 5px;
+}
+
+.inexButton:hover {
+    color: #fff;
+    background: orange;
+	font-weight: bold;
+}
+
 /*set the background where buttons are*/
 #btnsBack{
 width: 100%;
@@ -91,11 +107,17 @@ font-size: 20px;
 .btnAdd{
 width: 70px;
 height: 40px;
-background: #a54848;
+background: green;
 color: white;
 border: none;
 font-size: 16px;
 border-radius: 5px;
+}
+
+.btnAdd:hover {
+    color: #fff;
+    background: purple;
+	font-weight: bold;
 }
 
 .clock{
