@@ -29,4 +29,13 @@ function updateClock(){
   
 $(document).ready(function(){     
   setInterval('updateClock()', 1000);
+  
+  $("#btnEnterIn").click(function() {
+      $("#insertIn").fadeToggle("300");
+   });
+    
+  $("#btnEnterEx").click(function() {
+      $("#insertEx").fadeToggle("300");
+  }); 
+  
 });

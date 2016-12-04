@@ -20,7 +20,7 @@
       <div class="jumbotron">                       
           <button id="showIn" class="button">Show Incomes</button>
           <button id="showEx" class="button">Show Expenses</button>
-          <button id="ShowTo" class="button">Show Turnovers</button> 
+          <button id="showTo" class="button">Show Turnovers</button> 
       </div>
     </div> 
   </div>
@@ -33,23 +33,32 @@
       </div>
   <br><br> 
   
-    <div id="enterValues">
-    <br>
-     <form>
-      <div id="enterText">Enter the income: </div><br>
-      <input type="text" id="data">
-      <button onclick="" class="btnAdd">Add</button>
-  
-  <br>
-  <br>
-  <br>
-  
-       <div id="enterText">Enter the expense: </div><br>
-       <input style="text" id="data">
-       <button onclick="" class="btnAdd">Add</button>
-      </form>
-    </div>
-  </div>   
+   <!-- Panel with 2 separate panels for enter values of Incomes and Expenses -->
+   <!-- &#8364 = euro sign (HTML number) -->
+   <div id="enterVal">    
+   
+      <div class="enterValIn">  
+        <button id="btnEnterIn" class="btnEnter"> Income </button>
+        <div id="insertIn" class="insert" style=display:none>
+          Amount: &nbsp; <input type="text" id="amountIn" class="data" placeholder="required" required /> &#8364 <br>   
+          Item: &nbsp; <input type="text" id="itemIn" class="data" maxlength="20" placeholder="max. 20 char"/><br>
+          <input type="submit" id="btnAddIn" class="btnAdd" value="Add">
+        </div>
+     </div>
+       
+     <br>
+     
+     <div class="enterValEx">
+       <button id="btnEnterEx" class="btnEnter"> Expense </button>
+       <div id="insertEx" class="insert" style=display:none>
+         Amount: &nbsp; <input type="text" id="amountEx" class="data" placeholder="required" required /> &#8364 <br>
+         Item: &nbsp; <input type="text" id="itemEx" class="data" maxlength="20" placeholder="max. 20 char"/><br>
+         <input type="submit" id="btnAddEx" class="btnAdd" value="Add">
+       </div>
+     </div>
+    
+   </div>
+ </div>  
 
   </body>
 </html>
