@@ -1,0 +1,17 @@
+/* CSS Document */
+
+table, th{   
+    text-align: center;
+    border: 1px solid black;
+    /*display: none;*/
+    border-collapse: collapse;  
+} 
+
+td{	
+	text-align: center;	
+  border: 1px solid black;
+}
+
+tbody {
+text-align: justify;
+}
