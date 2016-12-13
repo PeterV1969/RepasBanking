@@ -60,6 +60,59 @@ border-radius: 5px;
 	font-weight: bold;
 }
 
+table, th{
+      
+    
+    
+    text-align: center;
+    
+    
+}
+td{
+	
+	text-align: center;
+ 	
+}
+
+
+tbody {
+text-align: justify;
+
+}
+
+.income:hover {
+    background-color:silver;
+    color:black;
+
+}
+
+.expense:hover {
+    background-color:silver;
+    color:black;
+
+}
+
+.income {
+	color: green;
+	
+}
+
+.expense {
+	color: red;
+}
+
+#actual h4{
+float: left;
+	font-size: 1.25em;
+	margin-left: 5px;
+	margin-right: 5px;
+	line-height: 50px;
+	color: black;
+	font-weight: lighter;
+	display: inline-block;
+}
+
+
 /*set the background where buttons are*/
 #btnsBack{
 width: 100%;

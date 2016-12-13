@@ -3,16 +3,22 @@
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="generator" content="PSPad editor, www.pspad.com">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
+
+  
   
   <title>Personal Banking</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="jquery.table.js"></script>
   <script src="script.js"></script>
+  
   </head>
   <body>
  
   <div id="header">
     <h1>Personal Banking</h1>
+    
+
       
   </div>
   
@@ -23,8 +29,16 @@
           <button id="showEx" class="button">Show Expenses</button>
           <button id="showTo" class="button">Show Turnovers</button> 
       </div>
-    </div> 
+    </div>
+    <div id="actual">
+<h3>Actual Balance:</h3>
+<h4 id="actualBalance"></h4></div>
+</div>
+    
+     
   </div>
+  
+
   
   <div id="content">
     <p>Welcome to Personal Banking</p>
@@ -41,10 +55,10 @@
       <div class="enterValIn">  
         <button id="btnEnterIn" class="inexButton"> Income </button>
         <div id="insertIn" class="insert" style=display:none>
-          Amount: &nbsp; <input type="text" id="amountIn" class="data" placeholder="required" required /> &#8364 <br>   
+          Amount: &nbsp; <input type="number" id="amountIn" class="data" placeholder="required" required /> &#8364 <br>   
           Item: &nbsp; <input type="text" id="itemIn" class="data" maxlength="20" placeholder="max. 20 char"/><br>
           <input type="submit" id="btnAddIn" class="btnAdd" value="Add">
-          <input type="submit" id="btnRemLastIn" class="btnRem" value="Remove Last">
+         <!-- <input type="submit" id="btnRemLastIn" class="btnRem" value="Remove Last">           -->
           <input type="submit" id="btnRemAllIn" class="btnRem" value="Remove All">
         </div>
      </div>
@@ -54,10 +68,10 @@
      <div class="enterValEx">
        <button id="btnEnterEx" class="inexButton"> Expense </button>
        <div id="insertEx" class="insert" style=display:none>
-         Amount: &nbsp; <input type="text" id="amountEx" class="data" placeholder="required" required /> &#8364 <br>
+         Amount: &nbsp; <input type="number" id="amountEx" class="data" placeholder="required" required /> &#8364 <br>
          Item: &nbsp; <input type="text" id="itemEx" class="data" maxlength="20" placeholder="max. 20 char"/><br>
          <input type="submit" id="btnAddEx" class="btnAdd" value="Add">
-         <input type="submit" id="btnRemLastEx" class="btnRem" value="Remove Last">
+     <!--    <input type="submit" id="btnRemLastEx" class="btnRem" value="Remove Last">       -->
          <input type="submit" id="btnRemAllEx" class="btnRem" value="Remove All">
        </div>
      </div>
@@ -68,56 +82,20 @@
       
     <table  class="tableall" id="dynTabIn">     
       <thead>
-        <tr>
+        <tr class="dyntab">
           <th> Id </th>
-          <th> Income value </th>
-          <th> Income item </th>
+          <th> Value </th>
+          <th> Item description </th>
           <th> Date </th>
           <th> Remove row</th>
         </tr>
+        <tbody class="tbody"></tbody>
       </thead>
+      
     </table>   
       
-  <br>
-  <br>
-  <br>
     
-       <!--table for Expence -->
-
-  <div>  
-    <table class="tableall" id="dynTabEx">
-      <thead>
-        <tr>
-          <th> Id </th>
-          <th> Expense value </th>
-          <th> Expense item </th>
-          <th> Date </th>
-          <th> Remove row</th>
-        </tr>
-      </thead>
-    </table>
-  </div>
-
-  <br>
-  <br>
-  <br>
-
-        <!--table for Turnover -->
-
-<div>
-  <table class="tableall" id="dynTabTo">
-    <thead>
-      <tr>
-        <th> Id </th>
-        <th> Value </th>
-        <th> Item </th>
-        <th> Date </th>
-        <th> Remove row</th>
-      </tr>
-    </thead>
-  </table>
-</div>      
-   </div>   
+       
 
 
   </body>
