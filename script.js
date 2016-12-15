@@ -72,9 +72,11 @@ $(document).ready(function(){
     $("#insertEx").fadeToggle("300");
   }); 
 
+
+
  $("#dynTabIn").mytable();
  
-  
+
    
      //highlighting active text field
     $('input[type="text"]').each(function(){

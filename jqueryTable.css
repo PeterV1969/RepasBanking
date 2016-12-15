@@ -12,6 +12,8 @@ td{
   border: 1px solid black;
 }
 
-tbody {
+.table {
+margin: 0 auto;
+float: center;
 text-align: justify;
 }

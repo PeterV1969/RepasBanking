@@ -101,6 +101,10 @@ color: black;
 line-height: 30px;
 }
 
+#content2{
+margin: 0 auto;
+}
+
 #enterValues{
 width: 35%;
 height: 300px;
